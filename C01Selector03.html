@@ -12,7 +12,7 @@
       }
       /* list-style이 none이면 좌측 블릿이 제거됨 */
       ul li {
-        list-style: non2;
+        list-style: none;
         border: 1px solid black;
         font-size: 24px;
         font-weight: bold;
@@ -21,6 +21,9 @@
       /* 
       11.구조선택자 : 동일한 수준의 태그들 중 홀수 혹은 짝수번재
       요소를 선택하여 스타일을 적용할때 사용한다. n은 0부터 시작한다.
+
+      id는 중복되지 않으므로 div는 생략해도 무방하나 
+      직관적으로 알아보기 위해 기술한것으로 보인다
       */
       div#content ul li:nth-child(2n + 1) {
         /* 1,3,5... 즉 홀수번째 li요소 선택 */

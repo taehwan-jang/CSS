@@ -1,0 +1,39 @@
+* {
+  border-radius: 8px;
+  font-family: source sans pro;
+  font-size: 12px;
+  color: white;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+table {
+  width: 420px;
+  height: 370px;
+  background-color: #dddddd;
+}
+td {
+  text-align: center;
+  /* border: 1px solid black; */
+}
+.number {
+  background-color: #373737;
+  font-size: 1.5em;
+}
+#cal td {
+  text-align: right;
+  font-size: 4em;
+  height: 25%;
+  color: black;
+  background-color: #70c738;
+  padding: 10px;
+}
+
+#backandc td {
+  background-color: #7b7b7b;
+}
+#backandc td:first-child {
+  font-size: 2em;
+}
+#backandc td:last-child {
+  font-size: 2em;
+}
