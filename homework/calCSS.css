@@ -11,15 +11,15 @@ table {
   height: 370px;
   background-color: #dddddd;
 }
-td {
+th {
   text-align: center;
   /* border: 1px solid black; */
 }
-.number {
+.number ~ input[name] {
   background-color: #373737;
   font-size: 1.5em;
 }
-#cal td {
+#cal th {
   text-align: right;
   font-size: 4em;
   height: 25%;
@@ -28,12 +28,12 @@ td {
   padding: 10px;
 }
 
-#backandc td {
+#backandc th {
   background-color: #7b7b7b;
 }
-#backandc td:first-child {
+#backandc th:first-child {
   font-size: 2em;
 }
-#backandc td:last-child {
+#backandc th:last-child {
   font-size: 2em;
 }

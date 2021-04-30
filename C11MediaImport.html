@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 
+        @import
+        - <link> 태그를 대체할 수 있다.
+        - style태그 안에서 사용해야 하고 반드시 최상단에 선언해야한다.
+        - CSS파일에 오류가 있는경우 다운로드 하지 않는다.
+        */
+        @import url('./style/import.css');
+        .content{
+            background-color: black; color: red;
+        }
+        /* 
+        @media
+        -해당 웹페이즈를 디바이스의 종류에 따라 각각 다르게
+        화면을 구성할 수 있게 해주는 기능을 가지고 있다.
+        -스크린용과 프린트용을 구분해야할때 사용한다.
+        */
+        @media screen {
+            .content{/* 모니터에서는 검은바탕에 흰색 글씨로 출력된다. */
+                background-color: black; color: white;
+            }
+
+        }
+        @media print {
+            .content{ /* 프린트 했을때는 빨간바탕에 노란색 글씨로 출력된다. */
+                background-color: red; color: yellow ;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <h2>media 속성</h2>
+    <div class="content">
+        <p>
+            <h3> 美 미인대회 우승자, 아침 조깅 나갔다 종적 감춰 </h3>
+            미국의 미인대회 우승자가 조깅하러 집을 나선 이후 실종됐다.
+            미 폭스뉴스는 30일(현지 시각) 텍사스주 댈러스 카운티의 어빙시 경찰이 지난 27일 새벽 조깅을 
+            위해 집을 나선 여성 라션 매시(38)가 집에 돌아오지 않았다는
+            신고를 받고 수사에 나섰다고 전했다. 매시의 남편이 초등학생인 
+            두 자녀의 등교 시간이 지나도 아내가 돌아오지 않자 경찰에 신고했다.
+            ‘미세스 댈러스 미인대회’에서 우승한 매시는 아칸소대학 리틀록 
+            캠퍼스에서 환경 공학 교수로 재직했던 토목공학 박사다.
+            두 아이를 키우면서도 꾸준히 운동해온 덕분에 올해 댈러스 
+            대표로 ‘미세스 텍사스주 미인대회’에도 출전할 예정이었다.
+        </p>
+    </div>
+</body>
+</html>
